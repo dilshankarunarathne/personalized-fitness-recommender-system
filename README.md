@@ -4,7 +4,7 @@ A fitness recommendation system addresses individual fitness needs efficiently b
 personalized workout and diet plans. It optimizes health journeys, providing tailored guidance 
 and motivation for improved results.
 
-[![Version](https://img.shields.io/badge/version-1.6-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
+[![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 ## Contributing
