@@ -1,4 +1,4 @@
-
+Fitness Recommender System
 
 A fitness recommendation system addresses individual fitness needs efficiently by delivering 
 personalized workout and diet plans. It optimizes health journeys, providing tailored guidance 
