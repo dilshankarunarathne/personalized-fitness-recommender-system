@@ -1,5 +1,6 @@
-# template-private-ccncsa
-This is a template repository for private repositories of this organization. It uses Creative Commons Non-Commercial International license. 
+
+
+A fitness recommendation system addresses individual fitness needs efficiently by delivering personalized workout and diet plans. It optimizes health journeys, providing tailored guidance and motivation for improved results.
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
