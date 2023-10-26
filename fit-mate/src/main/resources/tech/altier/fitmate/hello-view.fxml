@@ -5,9 +5,10 @@
 <?import javafx.scene.layout.VBox?>
 
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="tech.altier.fitmate.HelloController">
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="tech.altier.fitmate.HelloController">
 
-    
 
-</VBox>
+
+</BorderPane>
