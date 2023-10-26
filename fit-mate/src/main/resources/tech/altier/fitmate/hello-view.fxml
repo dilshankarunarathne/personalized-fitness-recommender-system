@@ -2,6 +2,7 @@
 
 <?import javafx.scene.layout.TilePane?>
 
-<TilePane>
-    
-</TilePane>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane>
+
+</BorderPane>
