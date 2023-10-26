@@ -3,7 +3,7 @@
 
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+<BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="tech.altier.fitmate.HelloController">
 
 
