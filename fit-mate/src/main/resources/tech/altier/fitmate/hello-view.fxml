@@ -6,6 +6,6 @@
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="tech.altier.fitmate.HelloController">
 
-
+    
 
 </BorderPane>
