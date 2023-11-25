@@ -1,6 +1,6 @@
 # Back-end Dockerfile
 # Use an official Python runtime as the base image
-FROM python:3.11.2
+FROM python:3.11
 
 # Set the working directory in the container to /app
 WORKDIR /app
