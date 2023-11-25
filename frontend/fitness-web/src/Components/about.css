@@ -1,0 +1,112 @@
+
+
+.banner-container {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: overlay;
+    align-items: center;
+    text-align: center;
+}
+.text-center{
+    background:white;
+}
+.text{
+    color: black;
+}
+#tx1,#tx2{
+    color: black;
+    
+}
+
+
+
+
+
+/* Style for the outer container */
+.container {
+    display: flex;
+}
+
+/* Style for the centered containers */
+.centered-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    height: 600px;
+    width: 800px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); 
+    
+}
+.col h2{
+    font-size: 35px;
+}
+.col1 h4{
+    text-align: center;
+    font-size: 20px;
+}
+.col2 {
+    background-color: #f9f6f6eb;
+    padding: 20px;
+    border: 1px solid #ccccccf1;
+    margin: 0 auto; 
+    height: 300px;
+    width: 600px;
+   text-align: center;
+}
+.col2 label {
+    font-size: 20px;
+}
+.upper {
+    height: 250px;
+    text-align: center;
+    
+    
+  };
+ 
+.ucontainer {
+    background-color: white;
+    height: 200px; 
+    width: 70%; 
+    text-align: center;
+    
+
+  }
+  .centered-container1 {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    height: auto; 
+    width: 70%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    text-align: center;
+   
+}
+.col1 {
+    display: flex;
+    justify-content: space-around;
+    flex: 1; 
+    text-align: center;
+}
+.h2 h2{
+    text-align: start;
+}
+#contact p{
+    font-size: 22px;
+}
+#mission p{
+    font-size: 22px;
+}
+#about p{
+    font-size: 22px;
+    }
+
+
