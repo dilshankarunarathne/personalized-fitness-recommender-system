@@ -3,6 +3,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+frontend/node_modules/
+frontend/fitness-web/node_modules/
+
 .idea
 .mvn
 
