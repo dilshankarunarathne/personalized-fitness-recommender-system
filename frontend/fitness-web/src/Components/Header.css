@@ -1,0 +1,88 @@
+*,*::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+li{
+    list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;   
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 12vh;
+    background:#01d28e ;
+}
+.nav__brand{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.nav__toggler div{
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #fff;
+    transition: 0.4s ease-in;
+}
+.nav__toggler{
+    cursor: pointer;
+    display: none;
+}
+
+.close__button{
+    position: absolute;
+    top: 0;
+    right: 5;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 768px){
+    .nav__toggler{
+        display: block;
+    }
+    .nav__menu{
+        position: fixed;
+        top:5.5vh;
+        right: 0;
+        width: 50%;
+        height: 93vh;
+        background:#01d28e ;
+        flex-direction: column;
+        transform: translateX(100%);
+      
+    }
+}
+/*nav acive class*/
+.nav__active{
+    transform: translateX(0);
+    transition: 2 ease;
+}
+/*Toggler Icon Animation */
+.toggle.line1{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle.line2{
+  opacity: 0;  
+}
+.toggle.line3{
+    transform: rotate(45deg) translate(-4px, 5px);
+}
+
