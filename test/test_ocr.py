@@ -15,7 +15,7 @@ def process_image(img_path):
     sentences = nltk.sent_tokenize(text.lower()) # Tokenize the text into sentences
     number_regex = r'\b\d{2,3}\b' # Define the regular expression for a number
     final_numbers = {} # number : priority
-    
+
     for sentence in sentences: # Iterate over the sentences
         # Tokenize the sentence into words
         words = nltk.word_tokenize(sentence)
@@ -30,8 +30,6 @@ def process_image(img_path):
         occurrences = re.findall(r'\b' + number + r'\b', text)
         # The count of the number is the length of the occurrences list
         count = len(occurrences)
-        # Print the number and its count
-        print(f"The number {number} appears {count} times in the text.")
         # set the priority of the number, based on the count
         p = final_numbers[number] / count
         final_numbers[number] = p
