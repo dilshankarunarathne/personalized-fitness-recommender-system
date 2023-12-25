@@ -10,7 +10,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 # pytesseract.pytesseract.tesseract_cmd = get('tesseract', 'cmd')
 
 
-def ocr(img_path) -> str:
+def ocr_img(img_path) -> str:
     img = cv2.imread(img_path)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     text = pytesseract.image_to_string(gray)
