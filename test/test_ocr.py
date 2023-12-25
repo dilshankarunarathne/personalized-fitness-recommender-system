@@ -22,4 +22,3 @@ def process_image(img_path):
             # Check if the word is a 2 or 3 digit number
             if re.match(number_regex, words[i]):
                 final_numbers[words[i]] = 1 # gives a priority as 1
-    print("all numbers found:", str(final_numbers.keys())[11:-2])
