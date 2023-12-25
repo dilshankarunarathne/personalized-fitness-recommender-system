@@ -11,7 +11,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 text = pytesseract.image_to_string(gray)
 
 
-def process_image(img_path):
+def process_image(text):
     sentences = nltk.sent_tokenize(text)  # Tokenize the text into sentences
     number_regex = r'\b\d{2,3}\b'  # Define the regular expression for a number
     final_numbers = {}  # number : priority
