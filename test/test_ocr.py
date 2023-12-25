@@ -22,3 +22,15 @@ def process_image(img_path):
             # Check if the word is a 2 or 3 digit number
             if re.match(number_regex, words[i]):
                 final_numbers[words[i]] = 1 # gives a priority as 1
+
+    # Iterate over the keys of the final_numbers dictionary
+    for number in final_numbers.keys():
+        # Find all occurrences of the number in the text
+        occurrences = re.findall(r'\b' + number + r'\b', text)
+        # The count of the number is the length of the occurrences list
+        count = len(occurrences)
+        # Print the number and its count
+        print(f"The number {number} appears {count} times in the text.")
+        # set the priority of the number, based on the count
+        p = final_numbers[number] / count
+        final_numbers[number] = p
