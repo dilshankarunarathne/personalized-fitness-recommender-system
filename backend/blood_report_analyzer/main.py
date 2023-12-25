@@ -1,3 +1,4 @@
+from backend.blood_report_analyzer.ocr import ocr_img_base64
 
 
 def analyze_blood_sugar_report(report_img_data): # TODO
