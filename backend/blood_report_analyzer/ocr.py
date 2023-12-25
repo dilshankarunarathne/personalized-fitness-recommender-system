@@ -1,5 +1,7 @@
 import cv2
 import pytesseract
+import numpy as np
+import base64
 
 # from backend.config import get
 
