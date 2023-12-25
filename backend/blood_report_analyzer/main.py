@@ -7,5 +7,3 @@ def analyze_blood_sugar_report(report_img_data):  # TODO
     # convert to text using ocr module
 
     # process text using analyzer module
-
-    pass
