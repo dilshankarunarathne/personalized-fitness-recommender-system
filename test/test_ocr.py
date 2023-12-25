@@ -51,3 +51,5 @@ def process_image(img_path):
         for number in numbers_in_range:
             p = final_numbers[number] / 2
             final_numbers[number] = p
+
+    
