@@ -42,10 +42,8 @@ def process_image(img_path):
     ranges = re.findall(range_regex, text)
     # Print the ranges
     for rang in ranges:
-        print(f"A range found: {rang}")
         # Find all numbers in the range
         numbers_in_range = re.findall(number_in_range_regex, rang)
-        print(f"Numbers in the range: {numbers_in_range}")
         # reassign the priority of the numbers
         for number in numbers_in_range:
             p = final_numbers[number] / 2
