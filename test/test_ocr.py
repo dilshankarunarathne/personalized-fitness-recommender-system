@@ -34,3 +34,5 @@ def process_image(img_path):
         # set the priority of the number, based on the count
         p = final_numbers[number] / count
         final_numbers[number] = p
+
+    
