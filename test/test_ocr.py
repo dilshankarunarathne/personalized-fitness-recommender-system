@@ -67,3 +67,5 @@ def process_image(img_path):
 
     # Print the number with the highest priority
     print(f"The number with the highest priority is {highest_priority_number} with a priority of {highest_priority}.")
+
+    
