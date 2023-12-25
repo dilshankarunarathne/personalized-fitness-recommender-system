@@ -8,4 +8,5 @@ tessdata_dir_config = '--tessdata-dir "C:\\Program Files\\Tesseract-OCR\\tessdat
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 def process_image(img_path):
-    
+    img = cv2.imread(img_path)
+
