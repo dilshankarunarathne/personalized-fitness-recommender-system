@@ -7,5 +7,5 @@ import nltk
 tessdata_dir_config = '--tessdata-dir "C:\\Program Files\\Tesseract-OCR\\tessdata"'
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-
-img = cv2.imread(image_path)
+def process_image(img_path):
+    
