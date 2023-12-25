@@ -15,3 +15,22 @@ def ocr_img(img_path) -> str:
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     text = pytesseract.image_to_string(gray)
     return text.lower()
+
+
+def ocr_img_base64(img_data: str) -> str:
+    # Decode the base64 string into bytes
+    img_bytes = base64.b64decode(img_data)
+
+    # Convert the bytes to a numpy array
+    nparr = np.frombuffer(img_bytes, np.uint8)
+
+    # Convert numpy array to image
+    img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+
+    # Convert the image to grayscale
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Perform OCR on the grayscale image
+    text = pytesseract.image_to_string(gray)
+
+    return text.lower()
