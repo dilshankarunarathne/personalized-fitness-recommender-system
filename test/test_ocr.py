@@ -1,5 +1,4 @@
 import re
-
 import cv2
 import nltk
 import pytesseract
