@@ -9,7 +9,7 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 img = cv2.imread(img_path)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 text = pytesseract.image_to_string(gray)
-
+text = text.lower()
 
 def process_text(text):
     sentences = nltk.sent_tokenize(text)  # Tokenize the text into sentences
