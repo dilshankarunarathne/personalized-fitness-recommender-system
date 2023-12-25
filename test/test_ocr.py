@@ -52,4 +52,18 @@ def process_image(img_path):
             p = final_numbers[number] / 2
             final_numbers[number] = p
 
-    
+    # Find the number with the highest priority
+    # Initialize the number with the highest priority and its priority
+    highest_priority_number = None
+    highest_priority = 0
+
+    # Iterate over the final_numbers dictionary
+    for number, priority in final_numbers.items():
+        # If the priority of the current number is higher than the highest priority found so far
+        if priority > highest_priority:
+            # Update the highest priority and the number with the highest priority
+            highest_priority = priority
+            highest_priority_number = number
+
+    # Print the number with the highest priority
+    print(f"The number with the highest priority is {highest_priority_number} with a priority of {highest_priority}.")
