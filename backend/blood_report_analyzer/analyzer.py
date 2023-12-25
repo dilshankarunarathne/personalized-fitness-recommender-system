@@ -2,7 +2,7 @@ import re
 import nltk
 
 
-def process_text(text):
+def process_sugar_report_text(text):
     sentences = nltk.sent_tokenize(text)  # Tokenize the text into sentences
     number_regex = r'\b\d{2,3}\b'  # Define the regular expression for a number
     final_numbers = {}  # number : priority
