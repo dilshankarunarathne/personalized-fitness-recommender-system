@@ -6,11 +6,13 @@ import pytesseract
 tessdata_dir_config = '--tessdata-dir "C:\\Program Files\\Tesseract-OCR\\tessdata"'
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
+img = cv2.imread(img_path)
+gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+text = pytesseract.image_to_string(gray)
+
 
 def process_image(img_path):
-    img = cv2.imread(img_path)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    text = pytesseract.image_to_string(gray)
+
 
     sentences = nltk.sent_tokenize(text.lower())  # Tokenize the text into sentences
     number_regex = r'\b\d{2,3}\b'  # Define the regular expression for a number
