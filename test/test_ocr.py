@@ -9,4 +9,4 @@ pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tessera
 
 def process_image(img_path):
     img = cv2.imread(img_path)
-
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
