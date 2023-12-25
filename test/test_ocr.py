@@ -61,3 +61,5 @@ def process_image(img_path):
             # Update the highest priority and the number with the highest priority
             highest_priority = priority
             highest_priority_number = number
+
+    return highest_priority_number
