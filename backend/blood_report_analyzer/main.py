@@ -1,3 +1,4 @@
+from backend.blood_report_analyzer.analyzer import process_sugar_report_text
 from backend.blood_report_analyzer.ocr import ocr_img_base64
 
 
