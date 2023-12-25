@@ -1,6 +1,4 @@
-import re
 import cv2
-import nltk
 import pytesseract
 
 tessdata_dir_config = '--tessdata-dir "C:\\Program Files\\Tesseract-OCR\\tessdata"'
