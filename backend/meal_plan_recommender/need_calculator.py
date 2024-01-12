@@ -35,3 +35,5 @@ def get_dietary_plan(
     plan += "- Carbohydrates: {:.0f}% of daily calories".format(daily_calories * 0.55 / 4)
     plan += "- Proteins: {:.0f} grams".format(weight_kg * 1.2)  # Assuming 1.2g per kg of body weight
     plan += "- Fats: {:.0f} grams".format(daily_calories * 0.25 / 9)  # 25% of daily calories from fats
+
+    return plan
