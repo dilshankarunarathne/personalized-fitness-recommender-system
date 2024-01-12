@@ -12,7 +12,7 @@ def calculate_caloric_needs(weight_kg, age_years, height_cm, gender):
     Returns:
     float: Estimated daily caloric needs
     """
-    
+
     # Harris-Benedict Equation
     if gender == "male":
         bmr = 88.362 + (13.397 * weight_kg) + (4.799 * height_cm) - (5.677 * age_years)
@@ -21,3 +21,4 @@ def calculate_caloric_needs(weight_kg, age_years, height_cm, gender):
 
     # Assuming moderate activity level
     return bmr * 1.55
+
