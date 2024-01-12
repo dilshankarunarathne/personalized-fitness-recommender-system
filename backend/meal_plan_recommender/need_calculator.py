@@ -31,7 +31,7 @@ def get_dietary_plan(
 
     # Dietary plan
     plan = "\nBased on your input, your estimated daily caloric needs are approximately {:.0f} calories.".format(daily_calories)
-    print("A balanced diet for you might include:")
+    plan += "A balanced diet for you might include:"
     print("- Carbohydrates: {:.0f}% of daily calories".format(daily_calories * 0.55 / 4))
     print("- Proteins: {:.0f} grams".format(weight * 1.2))  # Assuming 1.2g per kg of body weight
     print("- Fats: {:.0f} grams".format(daily_calories * 0.25 / 9))  # 25% of daily calories from fats
