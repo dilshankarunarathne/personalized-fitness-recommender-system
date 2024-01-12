@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 from fastapi import APIRouter, Form, UploadFile, File
 
+from backend.medic.bmi import calculate_bmi
+
 router = APIRouter(
     prefix="/api",
     tags=["core"],
