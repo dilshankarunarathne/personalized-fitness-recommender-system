@@ -11,7 +11,7 @@ router = APIRouter(
 async def root(
         height: int = Form(...),
         weight: int = Form(...),
-        file: UploadFile = File(...)
+        image: UploadFile = File(...)
 ):
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
