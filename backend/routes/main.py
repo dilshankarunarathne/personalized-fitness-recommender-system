@@ -18,6 +18,7 @@ router = APIRouter(
 async def root(
         height: int = Form(...),
         weight: int = Form(...),
+        age: str = Form(...),
         image: UploadFile = File(...)
 ):
     if image.content_type != "image/jpeg":
