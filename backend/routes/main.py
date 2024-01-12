@@ -30,5 +30,6 @@ async def root(
     blood_sugar_level = analyze_blood_sugar_report(img)
 
     # TODO
+    need = 
 
     return {"message": "Hello World"}
