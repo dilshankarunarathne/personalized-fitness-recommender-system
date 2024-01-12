@@ -1,3 +1,4 @@
+import cv2
 import numpy as np
 from fastapi import APIRouter, Form, UploadFile, File
 
