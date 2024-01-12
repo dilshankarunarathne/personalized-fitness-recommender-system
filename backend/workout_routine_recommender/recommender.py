@@ -30,4 +30,6 @@ def predict_workout_plan(
     # Decode 'Exercise' back to its original form
     exercise = loaded_le.inverse_transform([int(exercise_encoded)])[0]
 
+    return
+
 print(f"Predicted Exercise: {exercise}, Intensity: {intensity}, Duration: {duration}")
