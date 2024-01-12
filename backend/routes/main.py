@@ -34,9 +34,8 @@ async def root(
     dream_weight = calculate_dream_weight(weight, bmi)
     blood_sugar_level = analyze_blood_sugar_report(img)
 
-    # TODO
-    need = get_dietary_plan(weight, height, age, gender)
-    workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi)
+    need = get_dietary_plan(weight, height, age, gender)    # TODO need gender.lower()
+    workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi) # TODO gender - 'Male' 'Female'
 
     return {
         "need": need,
