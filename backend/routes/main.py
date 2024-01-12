@@ -25,6 +25,7 @@ async def root(
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
     bmi = calculate_bmi(weight, height)
+
     # TODO
 
     return {"message": "Hello World"}
