@@ -18,7 +18,7 @@ router = APIRouter(
 async def root(
         height: int = Form(...),
         weight: int = Form(...),
-        age: str = Form(...),
+        age: int = Form(...),
         gender: str = Form(...),    # male, female
         image: UploadFile = File(...)
 ):
