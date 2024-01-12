@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Form, UploadFile
+from fastapi import APIRouter, Form, UploadFile, File
 
 router = APIRouter(
     prefix="/api",
