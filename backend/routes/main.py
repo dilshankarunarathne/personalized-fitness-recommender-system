@@ -16,11 +16,8 @@ async def root(
     if image.content_type != "image/jpeg":
         return "Only jpeg images are supported"
 
-    if get_current_user(token) is None:
-        raise credentials_exception
-
     contents = await image.read()
     nparray = np.fromstring(contents, np.uint8)
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
-    
+
     return {"message": "Hello World"}
