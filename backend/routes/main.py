@@ -22,4 +22,6 @@ async def root(
     nparray = np.fromstring(contents, np.uint8)
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
+    # TODO
+
     return {"message": "Hello World"}
