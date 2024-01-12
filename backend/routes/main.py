@@ -9,7 +9,7 @@ from backend.medic.bmi import calculate_bmi
 router = APIRouter(
     prefix="/api",
     tags=["core"],
-    responses={404: {"description": "The requested page was not found"}},
+    responses={404: {"description": "The requested URL was not found"}},
 )
 
 
