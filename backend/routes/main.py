@@ -11,6 +11,6 @@ router = APIRouter(
 async def root(
         height: int = Form(...),
         weight: int = Form(...),
-        file:
+        file: UploadFile = File(...),
 ):
     return {"message": "Hello World"}
