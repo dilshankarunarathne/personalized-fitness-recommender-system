@@ -25,7 +25,7 @@ async def root(
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
     bmi = calculate_bmi(weight, height)
-    blood_sugar_level = analyze_blood_sugar_report
+    blood_sugar_level = analyze_blood_sugar_report(img)
 
     # TODO
 
