@@ -36,5 +36,5 @@ async def root(
     need = get_dietary_plan(weight, height, age, gender)
 
     return {
-        "need": need
+        "need": need,
     }
