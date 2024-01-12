@@ -19,17 +19,15 @@ def predict_workout_plan(
     dream_weight: int,
     bmi: float
 ):
-    pass
+    # Define a new observation as a DataFrame
+    # Replace 'Male' with the actual encoded value for the gender
+    new_observation = pd.DataFrame([['Male', 25, 70, 45, 29]],  # Gender, Age, Actual Weight, Dream Weight, BMI
+                                   columns=cat_features + num_features)
 
-# Define a new observation as a DataFrame
-# Replace 'Male' with the actual encoded value for the gender
-new_observation = pd.DataFrame([['Male', 25, 70, 45, 29]],  # Gender, Age, Actual Weight, Dream Weight, BMI
-                               columns=cat_features + num_features)
+    # Use the model to predict the exercise and intensity
+    exercise_encoded, intensity, duration = loaded_model.predict(new_observation)[0]
 
-# Use the model to predict the exercise and intensity
-exercise_encoded, intensity, duration = loaded_model.predict(new_observation)[0]
-
-# Decode 'Exercise' back to its original form
-exercise = loaded_le.inverse_transform([int(exercise_encoded)])[0]
+    # Decode 'Exercise' back to its original form
+    exercise = loaded_le.inverse_transform([int(exercise_encoded)])[0]
 
 print(f"Predicted Exercise: {exercise}, Intensity: {intensity}, Duration: {duration}")
