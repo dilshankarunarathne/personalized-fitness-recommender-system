@@ -27,7 +27,7 @@ def get_dietary_plan(
         weight_kg: int, height_cm: int, age: int, gender: str
 ):
     # Calculate caloric needs
-    daily_calories = calculate_caloric_needs(weight, age, height, gender)
+    daily_calories = calculate_caloric_needs(weight_kg, age, height, gender)
 
     # Dietary plan
     print("\nBased on your input, your estimated daily caloric needs are approximately {:.0f} calories.".format(
