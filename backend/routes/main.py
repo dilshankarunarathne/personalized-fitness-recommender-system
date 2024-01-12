@@ -34,6 +34,7 @@ async def root(
 
     # TODO
     need = get_dietary_plan(weight, height, age, gender)
+    workout_plan = predict_workout_plan()
 
     return {
         "need": need,
