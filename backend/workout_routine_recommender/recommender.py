@@ -18,7 +18,7 @@ def predict_workout_plan(
     actual_weight: int,
     dream_weight: int,
     bmi: float
-):
+) -> str:
     # Define a new observation as a DataFrame
     # Replace 'Male' with the actual encoded value for the gender
     new_observation = pd.DataFrame([['Male', 25, 70, 45, 29]],  # Gender, Age, Actual Weight, Dream Weight, BMI
