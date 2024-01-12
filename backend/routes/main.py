@@ -10,5 +10,6 @@ router = APIRouter(
 @router.post("/")
 async def root(
         height: int = Form(...),
+        weight: int = Form(...),
 ):
     return {"message": "Hello World"}
