@@ -24,7 +24,7 @@ def calculate_caloric_needs(weight_kg, age_years, height_cm, gender):
 
 
 def get_dietary_plan(
-        weight_kg, height_cm: int, age, gender: str
+        weight_kg, height_cm: int, age: int, gender: str
 ):
     # Asking user for their details
     weight = float(input("Please enter your weight in kilograms: "))
