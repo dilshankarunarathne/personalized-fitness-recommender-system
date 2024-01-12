@@ -22,7 +22,7 @@ async def root(
     nparray = np.fromstring(contents, np.uint8)
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
-    bmi = calculate_bmi
+    bmi = calculate_bmi(height, weight)
     # TODO
 
     return {"message": "Hello World"}
