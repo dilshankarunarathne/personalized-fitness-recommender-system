@@ -20,7 +20,7 @@ async def root(
         height: int = Form(...),
         weight: int = Form(...),
         age: int = Form(...),
-        gender: str = Form(...), 
+        gender: str = Form(...),
         image: UploadFile = File(...)
 ):
     if image.content_type != "image/jpeg":
@@ -34,7 +34,7 @@ async def root(
     dream_weight = calculate_dream_weight(weight, bmi)
     blood_sugar_level = analyze_blood_sugar_report(img)
 
-    need = get_dietary_plan(weight, height, age, gender)    # TODO need gender.lower()
+    need = get_dietary_plan(weight, height, age, gender.lower())    # TODO need gender.lower()
     workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi) # TODO gender - 'Male' 'Female'
 
     return {
