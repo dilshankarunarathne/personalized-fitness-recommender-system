@@ -31,5 +31,3 @@ def predict_workout_plan(
     exercise = loaded_le.inverse_transform([int(exercise_encoded)])[0]
 
     return f"Predicted Exercise: {exercise}, Intensity: {intensity}, Duration: {duration}"
-
-print()
