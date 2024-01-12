@@ -31,6 +31,6 @@ async def root(
     blood_sugar_level = analyze_blood_sugar_report(img)
 
     # TODO
-    need = get_dietary_plan(weight)
+    need = get_dietary_plan(weight, height, age, gender)
 
     return {"message": "Hello World"}
