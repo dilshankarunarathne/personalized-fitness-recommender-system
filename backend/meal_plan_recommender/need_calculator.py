@@ -23,7 +23,9 @@ def calculate_caloric_needs(weight_kg, age_years, height_cm, gender):
     return bmr * 1.55
 
 
-def get_dietary_plan():
+def get_dietary_plan(
+        
+):
     # Asking user for their details
     weight = float(input("Please enter your weight in kilograms: "))
     age = int(input("Please enter your age in years: "))
