@@ -25,7 +25,7 @@ def calculate_dream_weight(weight, bmi):
     int
         The dream weight of the patient.
     """
-    
+
     if bmi > 25:
         return weight * 0.95
     elif bmi < 18.5:
