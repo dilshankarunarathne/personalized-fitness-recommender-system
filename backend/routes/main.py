@@ -4,6 +4,7 @@ import numpy as np
 from fastapi import APIRouter, Form, UploadFile, File
 
 from backend.blood_report_analyzer.main import analyze_blood_sugar_report
+from backend.meal_plan_recommender.need_calculator import get_dietary_plan
 from backend.medic.bmi import calculate_bmi
 
 router = APIRouter(
