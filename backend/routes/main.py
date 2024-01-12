@@ -30,9 +30,8 @@ async def root(
     nparray = np.fromstring(contents, np.uint8)
     img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
-    dream_weight = calculate_dream_weight(weight, bmi)
-
     bmi = calculate_bmi(weight, height)
+    dream_weight = calculate_dream_weight(weight, bmi)
     blood_sugar_level = analyze_blood_sugar_report(img)
 
     # TODO
