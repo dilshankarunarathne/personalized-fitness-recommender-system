@@ -15,7 +15,7 @@ loaded_le = joblib.load('label_encoder.pkl')
 def predict_workout_plan(
 
 ):
-    
+    pass
 
 # Define a new observation as a DataFrame
 # Replace 'Male' with the actual encoded value for the gender
