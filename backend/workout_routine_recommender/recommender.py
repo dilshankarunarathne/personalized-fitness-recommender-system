@@ -17,7 +17,7 @@ def predict_workout_plan(
     age: int,
     actual_weight: int,
     dream_weight: int,
-    bmi: int
+    bmi: float
 ):
     pass
 
