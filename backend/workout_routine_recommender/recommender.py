@@ -22,8 +22,7 @@ def predict_workout_plan(
     # Define a new observation as a DataFrame
     # Replace 'Male' with the actual encoded value for the gender
     # data = ['Male', 25, 70, 45, 29]
-    data = [gender, age, actual_weight, dream_weight, bmi]
-    new_observation = pd.DataFrame([['Male', 25, 70, 45, 29]],  # Gender, Age, Actual Weight, Dream Weight, BMI
+    new_observation = pd.DataFrame([[gender, age, actual_weight, dream_weight, bmi]],  # Gender, Age, Actual Weight, Dream Weight, BMI
                                    columns=cat_features + num_features)
 
     # Use the model to predict the exercise and intensity
