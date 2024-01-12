@@ -16,7 +16,7 @@ def predict_workout_plan(
     gender: str,    # 'Male' / 'Female'
     age: int,
     actual_weight: int,
-    Dream Weight, BMI
+    dream_weight: int, BMI
 ):
     pass
 
