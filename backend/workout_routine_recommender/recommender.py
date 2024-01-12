@@ -15,7 +15,7 @@ loaded_le = joblib.load('label_encoder.pkl')
 def predict_workout_plan(
     gender: str,    # 'Male' / 'Female'
     age: int,
-    Actual Weight, Dream Weight, BMI
+    actual_weight, Dream Weight, BMI
 ):
     pass
 
