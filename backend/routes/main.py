@@ -37,6 +37,12 @@ async def root(
 
     nutrition_need = get_dietary_need(weight, height, age, gender.lower())  # 'male' 'female'
     workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi)   # TODO gender - 'Male' 'Female'
+
+    diseases = []
+    if blood_sugar_level > 140:
+        diseases.append('diabeties')
+    if bmi > 25:
+        diseases.append('obesity')
     meal_plan = get_meal_plan(['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian')
     # ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian'
 
