@@ -1,16 +1,8 @@
-import pandas as pd
-import numpy as np
-import sklearn
-from sklearn.neighbors import NearestNeighbors
-import pandas as pd
-import numpy as np
 import warnings
-import time
-import seaborn as sns
-import matplotlib.pyplot as plt
-import random
-import nltk
+
+import pandas as pd
 from nltk.corpus import stopwords
+from sklearn.neighbors import NearestNeighbors
 
 warnings.filterwarnings('ignore')
 
