@@ -131,12 +131,6 @@ class Profile:
 ob = Recommender()
 data = ob.get_features()
 
-total_features = data.columns
-d = dict()
-for i in total_features:
-    d[i]= 0
-# print(d)    # not needed
-
 sample_input = ['high_protien_diet', 'gluten_free_diet', 'diabeties', 'anemia', 'calcium', 'protien']
 
 for i in sample_input:
