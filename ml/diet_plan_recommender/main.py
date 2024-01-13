@@ -2,6 +2,17 @@ import pandas as pd
 import numpy as np
 import sklearn
 from sklearn.neighbors import NearestNeighbors
+import pandas as pd
+import numpy as np
+import warnings
+import time
+import seaborn as sns
+import matplotlib.pyplot as plt
+import random
+import nltk
+from nltk.corpus import stopwords
+
+warnings.filterwarnings('ignore')
 
 df = pd.read_csv('dataset.csv')
 
