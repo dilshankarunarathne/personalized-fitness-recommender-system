@@ -43,4 +43,5 @@ async def root(
     return {
         "need": nutrition_need,
         "workout_plan": workout_plan,
+        "meal_plan": meal_plan,
     }
