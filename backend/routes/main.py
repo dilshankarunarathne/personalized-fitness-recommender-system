@@ -43,8 +43,6 @@ async def root(
         diseases.append('diabeties')
     if bmi > 25:
         diseases.append('obesity')
-    if bmi < 18.5:
-        diseases.append('underweight')
     meal_plan = get_meal_plan(['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian')
     # ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian'
 
