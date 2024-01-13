@@ -37,12 +37,12 @@ async def root(
     blood_sugar_level = analyze_blood_sugar_report(img)
 
     nutrition_need = get_dietary_need(weight, height, age, gender.lower())  # 'male' 'female'
-    workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi)   # TODO gender - 'Male' 'Female'
+    workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi)  # TODO gender - 'Male' 'Female'
 
     diseases = get_diseases(blood_sugar_level, bmi)
 
-
-    meal_plan = get_meal_plan(['low_sodium_diet','low_fat_diet'], diseases, ['calcium','vitamin_c'], ['non-veg'],'i love indian')
+    meal_plan = get_meal_plan(['low_sodium_diet', 'low_fat_diet'], diseases, ['calcium', 'vitamin_c'], ['non-veg'],
+                              'i love indian')
     # ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian'
 
     return {
