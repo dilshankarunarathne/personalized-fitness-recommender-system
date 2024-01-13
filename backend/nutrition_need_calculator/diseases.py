@@ -1,4 +1,4 @@
-def get_diseases():
+def get_diseases(blood_sugar_level, bmi
     diseases = []
     if blood_sugar_level > 140:
         diseases.append('diabeties')
