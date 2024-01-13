@@ -151,3 +151,9 @@ for i in sample_input:
     d[i] = 1
 
 final_input = list(d.values())
+
+ob = Profile(['low_sodium_diet','low_fat_diet'],['diabeties'],
+             ['calcium','vitamin_c'],['non-veg'],'i love indian')
+
+profile = ob.get_profile()
+profile
