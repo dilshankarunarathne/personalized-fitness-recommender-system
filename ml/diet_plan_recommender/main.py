@@ -42,3 +42,6 @@ class Recommender:
         df_results = df_results.drop_duplicates(subset=['Name'])
         df_results = df_results.reset_index(drop=True)
         return df_results
+
+
+
