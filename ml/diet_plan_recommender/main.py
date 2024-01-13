@@ -52,3 +52,10 @@ d = dict()
 for i in total_features:
     d[i]= 0
 print(d)
+
+sample_input = ['high_protien_diet', 'gluten_free_diet', 'diabeties', 'anemia', 'calcium', 'protien']
+
+for i in sample_input:
+    d[i] = 1
+
+final_input = list(d.values())
