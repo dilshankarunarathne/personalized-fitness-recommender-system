@@ -128,18 +128,8 @@ class Profile:
         return df_merge
 
 
-ob = Recommender()
-data = ob.get_features()
-
-sample_input = ['high_protien_diet', 'gluten_free_diet', 'diabeties', 'anemia', 'calcium', 'protien']
-
-for i in sample_input:
-    d[i] = 1
-
-final_input = list(d.values())
-
-ob = Profile(['low_sodium_diet','low_fat_diet'],['diabeties'],
-             ['calcium','vitamin_c'],['non-veg'],'i love indian')
-
-profile = ob.get_profile()
-print(profile)
+# ['low_sodium_diet','low_fat_diet'],['diabeties'], ['calcium','vitamin_c'],['non-veg'],'i love indian'
+def get_meal_plan(diet, disease, nutrient, food_type, favorite_food):
+    ob = Profile(diet, disease, nutrient, food_type, favorite_food)
+    profile = ob.get_profile()
+    return profile
