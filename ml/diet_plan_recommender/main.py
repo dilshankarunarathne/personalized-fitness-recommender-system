@@ -128,7 +128,7 @@ class Profile:
         return df_merge
 
 
-# ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'],['non-veg'],'i love indian'
+# ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian'
 def get_meal_plan(diet, disease, nutrient, food_type, favorite_food):
     ob = Profile(diet, disease, nutrient, food_type, favorite_food)
     profile = ob.get_profile()
