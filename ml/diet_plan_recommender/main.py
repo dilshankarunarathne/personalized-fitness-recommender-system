@@ -143,7 +143,7 @@ total_features = data.columns
 d = dict()
 for i in total_features:
     d[i]= 0
-print(d)    # not needed
+# print(d)    # not needed
 
 sample_input = ['high_protien_diet', 'gluten_free_diet', 'diabeties', 'anemia', 'calcium', 'protien']
 
@@ -156,4 +156,4 @@ ob = Profile(['low_sodium_diet','low_fat_diet'],['diabeties'],
              ['calcium','vitamin_c'],['non-veg'],'i love indian')
 
 profile = ob.get_profile()
-profile
+print(profile)
