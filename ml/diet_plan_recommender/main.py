@@ -44,4 +44,11 @@ class Recommender:
         return df_results
 
 
+ob = Recommender()
+data = ob.get_features()
 
+total_features = data.columns
+d = dict()
+for i in total_features:
+    d[i]= 0
+print(d)
