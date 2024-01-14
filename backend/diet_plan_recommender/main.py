@@ -9,9 +9,8 @@ from backend.config import get
 warnings.filterwarnings('ignore')
 
 dataset_dir = get('data', 'dataset')
-print(dataset_dir)
 
-df = pd.read_csv("'backend/data/dataset.csv'")
+df = pd.read_csv(dataset_dir)
 
 
 class Recommender:
