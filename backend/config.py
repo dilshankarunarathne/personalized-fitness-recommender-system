@@ -8,5 +8,5 @@ def get(section: str, key: str):
     return config[section][key]
 
 
-print(config.sections())
-print(get('data', 'dataset'))
+# print(config.sections())
+# print(get('data', 'dataset'))
