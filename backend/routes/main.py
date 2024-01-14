@@ -26,7 +26,7 @@ async def root(
         image: UploadFile = File(...)
 ):
     if image and image.content_type != "image/jpeg":
-        # return {300: {"description": "Only jpeg images are supported"}} # TODO fix
+        # return {300: {"description": "Only jpeg images are supported"}} # TODO fix this
         image = None
 
     contents = await image.read()
