@@ -1,6 +1,8 @@
 import joblib
 import pandas as pd
 
+model_path = 
+
 # Define the categorical and numerical features
 cat_features = ['Gender']
 num_features = ['Dream Weight', 'Actual Weight', 'Age', 'BMI']
