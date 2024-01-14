@@ -68,7 +68,7 @@ class Profile:
 
     def removestop(self, tokens):
         stop = set(stopwords.words('english'))
-        file = open('stopwords.txt', 'r')
+        file = open(stopwords_path, 'r')
         l = list(file.read().split())
         stop = list(stop) + l
         l = [token for token in tokens if token not in stop]
