@@ -8,5 +8,5 @@ def get(section: str, key: str):
     return config[section][key]
 
 
-# print(config.sections())
-# print(get('tesseract', 'dir'))
+print(config.sections())
+print(get('tesseract', 'dir'))
