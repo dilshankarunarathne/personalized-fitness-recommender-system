@@ -1,6 +1,8 @@
 import joblib
 import pandas as pd
 
+from backend.config import get
+
 model_path = get('model', 'model')
 
 # Define the categorical and numerical features
