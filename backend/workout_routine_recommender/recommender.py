@@ -10,7 +10,7 @@ cat_features = ['Gender']
 num_features = ['Dream Weight', 'Actual Weight', 'Age', 'BMI']
 
 # Load the model
-loaded_model = joblib.load('model.pkl')
+loaded_model = joblib.load(model_path)
 
 # Load the LabelEncoder
 loaded_le = joblib.load('label_encoder.pkl')
