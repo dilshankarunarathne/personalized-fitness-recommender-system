@@ -15,7 +15,6 @@ df = pd.read_csv(dataset_dir)
 
 
 class Recommender:
-
     def __init__(self):
         self.df = pd.read_csv(dataset_dir)
 
