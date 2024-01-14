@@ -4,7 +4,7 @@ import pandas as pd
 from nltk.corpus import stopwords
 from sklearn.neighbors import NearestNeighbors
 
-# from backend.config import get
+from backend.config import get
 
 warnings.filterwarnings('ignore')
 
