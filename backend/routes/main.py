@@ -25,6 +25,10 @@ async def root(
         gender: str = Form(...),
         image: UploadFile = File(...)
 ):
+
+    bmi = calculate_bmi(weight, height)
+    dream_weight = calculate_dream_weight(weight, bmi)
+    
     if image and image.content_type != "image/jpeg":
         # return {300: {"description": "Only jpeg images are supported"}} # TODO fix this
         pass
@@ -33,8 +37,6 @@ async def root(
         nparray = np.fromstring(contents, np.uint8)
         img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
-    bmi = calculate_bmi(weight, height)
-    dream_weight = calculate_dream_weight(weight, bmi)
 
     if img:
         blood_sugar_level = analyze_blood_sugar_report(img)
