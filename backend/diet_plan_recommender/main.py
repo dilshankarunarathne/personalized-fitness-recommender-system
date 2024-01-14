@@ -10,7 +10,7 @@ warnings.filterwarnings('ignore')
 
 dataset_dir = get('data', 'dataset')
 
-df = pd.read_csv('backend/data/dataset.csv')
+df = pd.read_csv(dataset_dir)
 
 
 class Recommender:
