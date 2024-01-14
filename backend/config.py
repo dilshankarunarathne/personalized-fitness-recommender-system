@@ -9,4 +9,4 @@ def get(section: str, key: str):
 
 
 print(config.sections())
-print(get('tesseract', 'dir'))
+print(get('dataset', 'dir'))
