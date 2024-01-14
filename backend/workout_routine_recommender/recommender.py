@@ -13,7 +13,7 @@ num_features = ['Dream Weight', 'Actual Weight', 'Age', 'BMI']
 loaded_model = joblib.load(model_path)
 
 # Load the LabelEncoder
-loaded_le = joblib.load('label_encoder.pkl')
+loaded_le = joblib.load(label_encoder_path)
 
 
 def predict_workout_plan(
