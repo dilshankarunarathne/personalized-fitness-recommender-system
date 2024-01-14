@@ -27,7 +27,7 @@ async def root(
 ):
     if image and image.content_type != "image/jpeg":
         # return {300: {"description": "Only jpeg images are supported"}} # TODO fix this
-        image = None
+        pass
     else:
         contents = await image.read()
         nparray = np.fromstring(contents, np.uint8)
