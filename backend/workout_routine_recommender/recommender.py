@@ -4,6 +4,7 @@ import pandas as pd
 from backend.config import get
 
 model_path = get('model', 'model')
+label_encoder_path = get('model', 'label_encoder')
 
 # Define the categorical and numerical features
 cat_features = ['Gender']
