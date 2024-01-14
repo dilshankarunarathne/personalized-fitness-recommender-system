@@ -6,6 +6,8 @@ from sklearn.neighbors import NearestNeighbors
 
 warnings.filterwarnings('ignore')
 
+dataset_dir = get('dataset', 'dir')
+
 df = pd.read_csv('dataset.csv')
 
 
