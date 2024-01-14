@@ -1,7 +1,7 @@
 import configparser 
 
 config = configparser.RawConfigParser()
-config.read('backend/application.properties')
+config.read('application.properties')
 
 
 def get(section: str, key: str):
