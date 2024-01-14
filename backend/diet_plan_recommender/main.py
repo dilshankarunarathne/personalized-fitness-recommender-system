@@ -9,6 +9,7 @@ from backend.config import get
 warnings.filterwarnings('ignore')
 
 dataset_dir = get('data', 'dataset')
+stopwords_path = get('data', 'stopwords')
 
 df = pd.read_csv(dataset_dir)
 
