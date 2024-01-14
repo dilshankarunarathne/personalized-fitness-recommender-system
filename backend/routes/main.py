@@ -34,7 +34,7 @@ async def root(
 
     bmi = calculate_bmi(weight, height)
     dream_weight = calculate_dream_weight(weight, bmi)
-    
+
     if img:
         blood_sugar_level = analyze_blood_sugar_report(img)
         diseases = get_diseases(blood_sugar_level, bmi)
