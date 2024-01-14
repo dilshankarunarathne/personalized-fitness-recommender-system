@@ -4,13 +4,13 @@ import pandas as pd
 from nltk.corpus import stopwords
 from sklearn.neighbors import NearestNeighbors
 
-from backend.config import get
+# from backend.config import get
 
 warnings.filterwarnings('ignore')
 
-dataset_dir = get('dataset', 'dir')
+# dataset_dir = get('dataset', 'dir')
 
-df = pd.read_csv('dataset.csv')
+df = pd.read_csv('backend/data/dataset.csv')
 
 
 class Recommender:
