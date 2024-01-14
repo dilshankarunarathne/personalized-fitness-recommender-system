@@ -25,7 +25,7 @@ async def root(
         gender: str = Form(...),
         image: UploadFile = File(...)
 ):
-    if image.content_type != "image/jpeg":
+    if image and image.content_type != "image/jpeg":
         return {300: {"description": "Only jpeg images are supported"}}
 
     contents = await image.read()
