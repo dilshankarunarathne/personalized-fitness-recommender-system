@@ -8,7 +8,7 @@ from backend.config import get
 
 warnings.filterwarnings('ignore')
 
-# dataset_dir = get('dataset', 'dir')
+dataset_dir = get('data', 'dataset')
 
 df = pd.read_csv('backend/data/dataset.csv')
 
