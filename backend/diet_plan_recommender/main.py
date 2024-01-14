@@ -52,7 +52,7 @@ class Recommender:
 
 
 class Profile:
-    df = pd.read_csv('dataset.csv')  # static variable
+    df = pd.read_csv(dataset_dir)  # static variable
 
     def __init__(self, diet, disease, Nutrient, food_type, favorite_food):
         self.diet = diet
