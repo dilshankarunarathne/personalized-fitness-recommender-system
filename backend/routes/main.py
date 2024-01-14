@@ -29,9 +29,9 @@ async def root(
         # return {300: {"description": "Only jpeg images are supported"}} # TODO fix this
         image = None
     else:
-    contents = await image.read()
-    nparray = np.fromstring(contents, np.uint8)
-    img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
+        contents = await image.read()
+        nparray = np.fromstring(contents, np.uint8)
+        img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
     bmi = calculate_bmi(weight, height)
     dream_weight = calculate_dream_weight(weight, bmi)
