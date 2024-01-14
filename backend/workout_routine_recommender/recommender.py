@@ -1,7 +1,7 @@
 import joblib
 import pandas as pd
 
-model_path = 
+model_path = get('model', 'model')
 
 # Define the categorical and numerical features
 cat_features = ['Gender']
