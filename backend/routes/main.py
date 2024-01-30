@@ -44,11 +44,14 @@ async def root(
         diseases = get_diseases(None, bmi)
     else:
         contents = await image.read()
-        nparray = np.fromstring(contents, np.uint8)
-        img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
+        if contents:  # Check if the image file is not empty
+            nparray = np.fromstring(contents, np.uint8)
+            img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
-        blood_sugar_level = analyze_blood_sugar_report(img)
-        diseases = get_diseases(blood_sugar_level, bmi)
+            blood_sugar_level = analyze_blood_sugar_report(img)
+            diseases = get_diseases(blood_sugar_level, bmi)
+        else:
+            diseases = get_diseases(None, bmi)
 
     nutrition_need = get_dietary_need(weight, height, age, gender.lower())  # 'male' 'female'
     workout_plan = predict_workout_plan(gender, age, weight, dream_weight, bmi)  # TODO gender - 'Male' 'Female'
