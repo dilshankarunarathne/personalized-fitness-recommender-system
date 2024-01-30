@@ -17,15 +17,6 @@ router = APIRouter(
 )
 
 
-@router.post("/test")
-async def test():
-    return {
-        "need": 0,
-        "workout_plan": "age",
-        "meal_plan": "test",
-    }
-
-
 @router.post("/")
 async def root(
         height: int = Form(...),
