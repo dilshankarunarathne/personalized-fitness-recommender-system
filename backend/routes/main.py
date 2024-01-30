@@ -17,14 +17,25 @@ router = APIRouter(
 )
 
 
+@router.post("/test")
+async def test():
+    return {
+        "need": 0,
+        "workout_plan": "age",
+        "meal_plan": "test",
+    }
+
+
 @router.post("/")
 async def root(
         height: int = Form(...),
         weight: int = Form(...),
         age: int = Form(...),
         gender: str = Form(...),
-        image: UploadFile = File(...)
+        image: UploadFile = File(...),
+        diseases_info: str = Form(None),
 ):
+    print("data: ", )
     bmi = calculate_bmi(weight, height)
     dream_weight = calculate_dream_weight(weight, bmi)
 
@@ -45,6 +56,9 @@ async def root(
     meal_plan = get_meal_plan(['low_sodium_diet', 'low_fat_diet'], diseases, ['calcium', 'vitamin_c'], ['non-veg'],
                               'i love indian')
     # ['low_sodium_diet','low_fat_diet'], ['diabeties'], ['calcium','vitamin_c'], ['non-veg'],'i love indian'
+
+    if diseases_info is not None:
+        workout_plan = "Not recommended until be validated by a doctor! " + workout_plan
 
     return {
         "need": nutrition_need,
